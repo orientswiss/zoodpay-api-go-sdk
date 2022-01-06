@@ -13,3 +13,11 @@
 
 # Dependency directories (remove the comment below to include it)
 # vendor/
+
+# JetBrains IDE
+.idea/
+# Config Files
+config.yml
+# Coverrage
+cover.out
+coverage.out

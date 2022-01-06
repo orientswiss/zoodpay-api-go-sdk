@@ -1,0 +1,18 @@
+api_url: http://localhost:8080
+version: v0
+default_code: -1 # Default Error Code
+cst: yml # cst: Credential Source Type. Choices: `yml`, `db`.
+# Yml configuration to get the credentials from the yml file. Can be ignored if `cst` is db. Values shall be in string
+yml:
+    merchant_key: ~
+    merchant_secret: ~
+    merchant_salt: ~
+    market_code: ~
+# Database Configuration to get the credentials from the database. Can be ignored if `cst` is yml. Values shall be in string
+db:
+    host: ~
+    port: ~
+    user_name: ~
+    password: ~
+    database: ~
+    table: ~ # Please have zoodpay_merchant_key, zoodpay_merchant_secret, zoodpay_merchant_salt and zoodpay_merchant_market_code columns in your table to store key, secret and salt respectively.
